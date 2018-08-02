@@ -4,6 +4,7 @@
     <list default="true" id="82d7160e-4f50-4917-86e1-cb10bc8fc5a4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/task_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/task_1.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task_1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task_1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="323">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="task_1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="1360">
+              <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+              <folding>
+                <element signature="e#638#766#0" />
+                <element signature="e#649#763#0" />
+                <element signature="e#919#1273#0" />
+                <element signature="e#99#105#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +58,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task_1.js" />
         <option value="$PROJECT_DIR$/task_1.html" />
+        <option value="$PROJECT_DIR$/task_1.js" />
       </list>
     </option>
   </component>
@@ -66,9 +73,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="911" />
-    <option name="width" value="939" />
-    <option name="height" value="1089" />
+    <option name="x" value="910" />
+    <option name="width" value="940" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -76,7 +83,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,6 +94,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,16 +128,18 @@
       <updated>1533119342461</updated>
       <workItem from="1533119345667" duration="10305000" />
       <workItem from="1533129908091" duration="38000" />
+      <workItem from="1533200244374" duration="8324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10343000" />
+    <option name="totallyTimeSpent" value="18667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30163044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16333564" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -158,6 +167,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/task_1.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#638#766#0" />
+            <element signature="e#649#763#0" />
+            <element signature="e#919#1273#0" />
+            <element signature="e#99#105#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_1.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
@@ -173,17 +202,23 @@
     <entry file="file://$PROJECT_DIR$/testdata.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/task_1.js">
+    <entry file="file://$PROJECT_DIR$/task_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task_1.html">
+    <entry file="file://$PROJECT_DIR$/task_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="1360">
+          <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <element signature="e#638#766#0" />
+            <element signature="e#649#763#0" />
+            <element signature="e#919#1273#0" />
+            <element signature="e#99#105#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
