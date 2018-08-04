@@ -1,0 +1,41 @@
+.webix_template {
+    text-align: center;
+}
+
+.titleStyle {
+    background-color: #d2e3ef;
+}
+
+.datatableHover {
+    background-color: lightgray;
+}
+
+.titleStyle div {
+    border: 1px solid #b0cee3;
+}
+
+span {
+    color: green;
+}
+
+span i {
+    margin-right: 10px;
+}
+
+.webix_list_item .delete{
+    padding-top:7px;
+    margin-right:20px;
+}
+
+.webix_multiview .webix_list_item:nth-child(-n+5){
+    background-color: #d2e3ef;
+}
+
+.edit, .delete {
+    float: right;
+    padding-top: 12%;
+}
+
+.edit:hover, .delete:hover {
+    cursor: pointer;
+}
