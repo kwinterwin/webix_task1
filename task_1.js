@@ -1,4 +1,4 @@
-webix.ready(function(){
+webix.ready(function () {
     webix.ui({
         rows: [
             toolbar,

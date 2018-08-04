@@ -7,23 +7,25 @@ function update_row() {
 }
 
 let form_button = {
-    rows:[
+    rows: [
         {
             cols: [
-                {view: "button", value: "Add new",  autoheight:true, type: "form", click: function () {
+                {
+                    view: "button", value: "Add new", autoheight: true, type: "form", click: function () {
                         if ($$("myform").validate()) {
                             $$('datatable').add($$("myform").getValues());
                             webix.message({text: "Validation is success", type: "info"});
                         }
                     }
                 },
-                {view: "button", value: "Clear", autoheight:true, click: function () {
+                {
+                    view: "button", value: "Clear", autoheight: true, click: function () {
                         webix.confirm({
                             text: "The form will be cleared. Continue?", title: "Attention",
                             ok: "Yes",
                             cancel: "No",
                             callback: function (result) {
-                                if(result){
+                                if (result) {
                                     $$("myform").clear();
                                 }
                             }
@@ -32,7 +34,8 @@ let form_button = {
                 }
             ]
         },
-        {view: "button", value: "Edit",  autoheight:true, click: function () {
+        {
+            view: "button", value: "Edit", autoheight: true, click: function () {
                 if ($$("myform").validate()) {
                     update_row();
                     $$("myform").clear();
@@ -40,12 +43,12 @@ let form_button = {
                 }
             }
         }
-            ]
+    ]
 };
 
 let form = {
     view: "form",
-    gravity:0.8,
+    gravity: 0.8,
     id: "myform",
     elements: [
         {type: "section", template: "edit films"},
@@ -54,7 +57,7 @@ let form = {
         {view: "text", label: "Rating", name: "rating", invalidMessage: "Rating cannot be empty or 0"},
         {view: "text", label: "Votes", name: "votes", invalidMessage: "Votes must be less than 100000"},
         form_button,
-         {}
+        {}
     ],
     rules: {
         title: webix.rules.isNotEmpty,
@@ -62,12 +65,12 @@ let form = {
             return (value >= 1970 && value <= date);
         },
         votes: function (value) {
-            value=value.replace(',', '.');
+            value = value.replace(',', '.');
             let numberValue = parseFloat(value);
             return value < 100000;
         },
         rating: function (value) {
-            if(value!=0)
+            if (value != 0)
                 return true;
             else
                 webix.rules.isNotEmpty;
