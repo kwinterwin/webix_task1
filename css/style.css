@@ -14,6 +14,10 @@
     border: 1px solid #b0cee3;
 }
 
+.highlight{
+    background-color:lightyellow;
+}
+
 span {
     color: green;
 }
@@ -25,14 +29,10 @@ span i {
 .webix_list_item .delete{
     padding-top:7px;
     margin-right:20px;
-}
-
-.webix_multiview .webix_list_item:nth-child(-n+5){
-    background-color: #d2e3ef;
+    float: right;
 }
 
 .edit, .delete {
-    float: right;
     padding-top: 12%;
 }
 

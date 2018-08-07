@@ -1,11 +1,5 @@
 let date = new Date().getFullYear();
 
-function update_row() {
-    let newData = $$('myform').getValues();
-    let item = JSON.parse(JSON.stringify(newData));
-    $$("datatable").updateItem(datatableID, item);
-}
-
 let form_button = {
     rows: [
         {
@@ -33,15 +27,6 @@ let form_button = {
                     }
                 }
             ]
-        },
-        {
-            view: "button", value: "Edit", autoheight: true, click: function () {
-                if ($$("myform").validate()) {
-                    update_row();
-                    $$("myform").clear();
-                    webix.message({text: "Edit completed successfully.", type: "debug"});
-                }
-            }
         }
     ]
 };
@@ -59,6 +44,11 @@ let form = {
         form_button,
         {}
     ],
+    on: {
+      'onChange':function () {
+          this.save();
+      }  
+    },
     rules: {
         title: webix.rules.isNotEmpty,
         year: function (value) {

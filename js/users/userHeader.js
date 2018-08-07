@@ -1,10 +1,11 @@
 function userFilter() {
     let value = this.getValue().toLowerCase();
-    $$("userList").filter(function(obj) {
+    $$("userList").filter(function (obj) {
         console.log(obj);
         return obj.name.toLowerCase().indexOf(value) == 0;
     })
 };
+
 
 let userHeader = {
     cols: [
@@ -14,12 +15,27 @@ let userHeader = {
                 'onTimedKeyPress': userFilter
             }
         },
-        {view: "button", value: "Sort asc", width: 200, click: function () {
+        {
+            view: "button", value: "Sort asc", width: 200, click: function () {
                 $$("userList").sort("#name#", "asc");
-            }},
-        {view: "button", value: "Sort desc", width: 200, click: function () {
+            }
+        },
+        {
+            view: "button", value: "Sort desc", width: 200, click: function () {
                 $$("userList").sort("#name#", "desc");
-            }}
+            }
+        },
+        {
+            view: "button", value: "Add new", width:200, click: function () {
+                let userId = $$("userList").getLastId()+1;
+                $$("userList").add({id:userId, name: "Anna Samuseva", age: 20, country: "Russia"})
+            }
+        },
+        {
+            view: "button", value: "Group chart", width:200, click: function () {
+
+            }
+        }
     ]
 };
 

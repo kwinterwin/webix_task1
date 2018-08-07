@@ -11,5 +11,14 @@ webix.ready(function () {
     });
 
     $$("datatable").markSorting("title", "asc");
+    $$('myform').bind($$('datatable'));
+    $$("userChart").sync($$("userList"), function () {
+        this.group({
+            by: "country",
+            map: {
+                age: ["age", "count"]
+            }
+        });
+    });
 });
 
