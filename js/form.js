@@ -41,29 +41,48 @@ let form = {
         {view: "text", label: "Year", name: "year", invalidMessage: "Year should be between 1970 and current"},
         {view: "text", label: "Rating", name: "rating", invalidMessage: "Rating cannot be empty or 0"},
         {view: "text", label: "Votes", name: "votes", invalidMessage: "Votes must be less than 100000"},
-        form_button,
-        {}
-    ],
-    on: {
-      'onChange':function () {
-          this.save();
-      }  
-    },
-    rules: {
-        title: webix.rules.isNotEmpty,
-        year: function (value) {
-            return (value >= 1970 && value <= date);
-        },
-        votes: function (value) {
-            value = value.replace(',', '.');
-            let numberValue = parseFloat(value);
-            return value < 100000;
-        },
-        rating: function (value) {
-            if (value != 0)
-                return true;
-            else
-                webix.rules.isNotEmpty;
-        }
+        {
+            view: "richselect",
+            label: "Categories",
+            options:{
+                data:categoriesData
+            },
+            value: 1,
+            id: "richselect"
+        },form_button,
+    {}
+],
+on: {
+    'onChange'
+:
+
+    function () {
+        this.save();
     }
-};
+}
+,
+rules: {
+    title: webix.rules.isNotEmpty,
+        year
+:
+
+    function (value) {
+        return (value >= 1970 && value <= date);
+    }
+
+,
+    votes: function (value) {
+        value = value.replace(',', '.');
+        let numberValue = parseFloat(value);
+        return value < 100000;
+    }
+,
+    rating: function (value) {
+        if (value != 0)
+            return true;
+        else
+            webix.rules.isNotEmpty;
+    }
+}
+}
+;

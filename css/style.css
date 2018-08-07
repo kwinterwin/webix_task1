@@ -32,10 +32,10 @@ span i {
     float: right;
 }
 
-.edit, .delete {
+.edit, .delete, .add {
     padding-top: 12%;
 }
 
-.edit:hover, .delete:hover {
+.edit:hover, .delete:hover, .add:hover {
     cursor: pointer;
 }

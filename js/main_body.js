@@ -7,7 +7,7 @@ let main_body = {
                 {id: "Dashboard", cols: [datatable, form]},
                 {id: "Users", rows: [userHeader, userList, chart]},
                 {id: "Products", cols: [treetable]},
-                {id: "Locations", template: "Locations view"}
+                {id: "Admin", cols:[adminDatatable]}
             ]
         }
     ]

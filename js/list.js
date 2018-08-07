@@ -14,7 +14,7 @@ let list = {
                 {id: "Dashboard", value: "Dashboards"},
                 {id: "Users", value: "Users"},
                 {id: "Products", value: "Products"},
-                {id: "Locations", value: "Locations"}
+                {id: "Admin", value: "Admin"}
             ]
         },
         {},

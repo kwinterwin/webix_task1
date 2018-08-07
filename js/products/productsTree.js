@@ -27,14 +27,10 @@ let treetable = {
             if(id.column=="title"){
                 if(obj.value=="")
                     obj.value=obj.old;
-                webix.message({text: "Title must be filled in", type: "error"});
-                return true;
             }
             if(id.column=="price"){
                 if(isNaN(obj.value))
                     obj.value=obj.old;
-                webix.message({text: "Price must be number", type: "error"});
-                return true;
             }
         }
 

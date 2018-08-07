@@ -6,7 +6,6 @@ let userList = {
     view: "userList",
     id: "userList",
     select: true,
-    autoheight: true,
     template: "#id#. <strong>#name#</strong> from #country# <i class='fa fa-trash delete'></i>",
     url: "js/data/users.js",
     editable:true,

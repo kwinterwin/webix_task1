@@ -27,13 +27,7 @@ let userHeader = {
         },
         {
             view: "button", value: "Add new", width:200, click: function () {
-                let userId = $$("userList").getLastId()+1;
-                $$("userList").add({id:userId, name: "Anna Samuseva", age: 20, country: "Russia"})
-            }
-        },
-        {
-            view: "button", value: "Group chart", width:200, click: function () {
-
+                $$("userList").add({ name: "Anna Samuseva", age: 20, country: "Russia"})
             }
         }
     ]
